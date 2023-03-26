@@ -1,0 +1,56 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body class="bg-primary-subtle">
+  <div class="container bg-primary-subtle">
+    
+    <center>
+
+<h1>IMAGE REC</h1>
+      <br><br>
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <h5>Mini Book</h5>
+      <hr class="text-danger-emphasis">
+      <h5>Cube</h5>
+      <hr class="text-danger-emphasis">
+      <h5>Water</h5>
+      <hr class="text-danger-emphasis">
+      <h5>phone</h5>
+      <label>Webcam View - </label>
+
+      <br><br>
+      <div class="hi"></div>
+      <br><br>
+      <label>Captured Image</label>
+      <br><br>
+      <div class="hi"></div>
+      <br><br>
+      <button class="btn btn-danger" onclick="snap()">Capture Image</button>
+      <br><br>
+      <button class="btn btn-success" onclick="check()" >identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object : <span id="result_object_name"> </span> </p>
+    
+      <p style="font-size: 22px;">Accuracy :  <span id="result_object_ac"></span></p>
+
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+ 
